@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniSocial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>MiniSocial</h1>
+        <input type="text" placeholder="Search...">
+        <div class="profile">👤</div>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <h3>Navigation</h3>
+            <ul>
+                <li>Home</li>
+                <li>Messages</li>
+                <li>Groups</li>
+            </ul>
+
+            <h3>Friends</h3>
+            <ul class="friends-list">
+                <li><span class="status online"></span> Alice</li>
+                <li><span class="status offline"></span> Bob</li>
+                <li><span class="status online"></span> Charlie</li>
+                <li><span class="status online"></span> Diana</li>
+            </ul>
+        </aside>
+
+        <!-- Feed -->
+        <main class="feed">
+            <!-- Post Box -->
+            <div class="post-box">
+                <textarea placeholder="What's on your mind?"></textarea>
+                <button>Post</button>
+            </div>
+
+            <!-- Example Posts -->
+            <div class="post-card">
+                <div class="post-header">
+                    <img src="https://i.pravatar.cc/40?img=1" alt="Profile">
+                    <h4>Alice</h4>
+                </div>
+                <p>Hello everyone! Loving this platform 😎</p>
+                <div class="post-actions">
+                    <button class="like-btn">👍 Like <span class="like-count">0</span></button>
+                    <button class="comment-btn">💬 Comment</button>
+                </div>
+                <div class="comments"></div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+          <h3>Notifications</h3>
+<ul class="notifications">
+    <li>✅ Alice liked your post</li>
+    <li>💬 Bob commented on your post</li>
+    <li>✅ Charlie started following you</li>
+</ul>
+            <h3>Trending</h3>
+            <ul class="trending-list">
+                <li>🔥 #Coding</li>
+                <li>🎨 #Design</li>
+                <li>💻 #WebDev</li>
+                <li>🚀 #Startups</li>
+            </ul>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #1877f2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header input {
+    width: 50%;
+    padding: 5px;
+}
+
+header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* Sidebars */
+.sidebar, .right-sidebar {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+    height: fit-content;
+}
+
+.feed {
+    flex: 2;
+}
+
+/* Friends List */
+.friends-list, .trending-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.friends-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+}
+
+.status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.status.online { background: #4caf50; }
+.status.offline { background: #f44336; }
+
+.trending-list li { padding: 5px 0; font-weight: bold; }
+
+/* Post Box */
+.post-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.post-box textarea {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Post Cards */
+.post-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.post-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #1877f2;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.comments { margin-top: 10px; }
+
+/* Dark Mode */
+.dark-mode {
+    background: #18191a;
+    color: #e4e6eb;
+}
+
+.dark-mode .post-card, .dark-mode .post-box,
+.dark-mode .sidebar, .dark-mode .right-sidebar {
+    background: #242526;
+    color: #e4e6eb;
+}
+
+.dark-mode input, .dark-mode textarea {
+    background: #3a3b3c;
+    color: #e4e6eb;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container { flex-direction: column; gap: 10px; }
+    .sidebar, .right-sidebar, .feed { width: 100%; flex: none; }
+}.post-img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}.liked {
+    color: #e0245e; /* red/pink */
+}.notifications {
+    list-style: none;
+    padding-left: 0;
+}
+
+.notifications li {
+    padding: 5px 0;
+    font-size: 14px;
+}
